@@ -1,5 +1,10 @@
 <h1>Learning Structural Directive</h1>
-<section *hideDir>
+&nbsp;count : {{ count }}
+<section *hideDir="5000; then placeHolder">
   <h2>Title to the section</h2>
   <p>This content is suppose to disappear in 2 seconds</p>
 </section>
+<ng-template #placeHolder>
+  <p>This is the template to be shown when the condition evaluates to false</p>
+  <p></p
+></ng-template>
